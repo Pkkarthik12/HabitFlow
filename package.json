@@ -1,0 +1,44 @@
+{
+  "name": "habitflow",
+  "version": "1.0.0",
+  "description": "A beautiful desktop habit tracker with daily reminders, streaks, and progress charts",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "build": "electron-builder build --publish=never",
+    "build:win": "electron-builder build --win --publish=never",
+    "build:mac": "electron-builder build --mac --publish=never",
+    "build:linux": "electron-builder build --linux --publish=never"
+  },
+  "keywords": ["habit-tracker", "electron", "productivity", "desktop"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "dependencies": {
+    "electron-store": "^8.1.0",
+    "node-notifier": "^10.0.1"
+  },
+  "build": {
+    "appId": "com.habitflow.app",
+    "productName": "HabitFlow",
+    "icon": "assets/icons/icon",
+    "directories": {
+      "output": "dist"
+    },
+    "mac": {
+      "category": "public.app-category.productivity",
+      "target": ["dmg", "zip"]
+    },
+    "win": {
+      "target": ["nsis", "portable"]
+    },
+    "linux": {
+      "target": ["AppImage", "deb"],
+      "category": "Utility"
+    }
+  }
+}
