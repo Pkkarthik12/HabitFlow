@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;" />
+  <title>HabitFlow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">
+      <span class="logo-icon">⬡</span>
+      <span class="logo-text">HabitFlow</span>
+    </div>
+
+    <nav class="nav">
+      <button class="nav-item active" data-page="today">
+        <span class="nav-icon">◈</span> Today
+      </button>
+      <button class="nav-item" data-page="habits">
+        <span class="nav-icon">◇</span> My Habits
+      </button>
+      <button class="nav-item" data-page="stats">
+        <span class="nav-icon">◉</span> Progress
+      </button>
+      <button class="nav-item" data-page="settings">
+        <span class="nav-icon">◎</span> Settings
+      </button>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="streak-badge" id="globalStreak">
+        <span class="streak-fire">🔥</span>
+        <span id="bestStreakLabel">0 day streak</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main">
+    <div id="page-today" class="page active"></div>
+    <div id="page-habits" class="page"></div>
+    <div id="page-stats" class="page"></div>
+    <div id="page-settings" class="page"></div>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/habits.js"></script>
+  <script src="js/today.js"></script>
+  <script src="js/stats.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
