@@ -2,6 +2,7 @@
 
 A beautiful, lightweight **desktop habit tracker** built with Electron. Track your daily habits, maintain streaks, visualize your progress, and get daily reminders — all stored locally on your computer.
 
+![HabitFlow Screenshot](assets/screenshot.png)
 
 ---
 
