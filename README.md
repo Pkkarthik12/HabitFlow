@@ -1,2 +1,3 @@
 # Personal-Habit-Tracker-CLI-App
-its presonal
+its personal 
+gui like notion
