@@ -64,22 +64,22 @@ Built files appear in the `dist/` folder.
 
 ```
 habitflow/
-├── main.js          # Electron main process (window, notifications, data)
-├── preload.js       # Secure bridge between app and system
-├── package.json     # Dependencies and build config
+├── main.js          
+├── preload.js       
+├── package.json     
 ├── src/
-│   ├── index.html   # App shell
+│   ├── index.html   
 │   ├── css/
 │   │   └── style.css
 │   └── js/
-│       ├── app.js       # Router & utilities
-│       ├── db.js        # Data layer (read/write JSON)
-│       ├── today.js     # Today's habits view
-│       ├── habits.js    # Habit management
-│       ├── stats.js     # Progress charts
-│       └── settings.js  # App settings
+│       ├── app.js       
+│       ├── db.js        
+│       ├── today.js    
+│       ├── habits.js   
+│       ├── stats.js     
+│       └── settings.js  
 └── assets/
-    └── icons/       # App icons
+    └── icons/       
 ```
 
 ---
